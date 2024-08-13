@@ -286,7 +286,6 @@ section {
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
 }
 
 .details-container {
@@ -297,6 +296,19 @@ section {
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
+}
+
+.details-container-project {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .section-container {
@@ -341,7 +353,7 @@ section {
 article{
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: flex-starts;
     gap: 0.5rem;
 }
 
@@ -364,11 +376,11 @@ article .icon {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    max-width: 40vw;
+    max-height: 40vh;
+   
 }
-.project1 {
-    max-width: 30rem;
-    max-height: 30rem;
-}
+
 .project-title {
     margin: 1rem;
     color: black;
@@ -432,4 +444,34 @@ footer {
 
 footer p{
     text-align: center;
+}
+
+#container {
+    overflow: scroll;
+}
+
+.scroll-pane {
+    -ms-overflow-style: scroll;  
+    scrollbar-width: none; 
+}
+
+
+  .scroll-pane::-webkit-scrollbar { 
+  display: none;  
+  }
+  
+  .backarrow{
+    position: absolute;
+    left: -5rem;
+    bottom: 15rem;
+    rotate: 90deg;
+    display: flex;
+}
+
+.nextarrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 15rem;
+    rotate: 270deg;
+    display: flex;
 }
